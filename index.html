@@ -24,54 +24,77 @@
     }
     .fd-nav-item {
     }
-    
+    .fd-banner {
+        background-color: #ebebeb;
+        height: 2.5rem;
+        margin: 0;
+        list-style-type: none;
+        color: #666699;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: hidden;
+    }
+    .fd-banner > li {
+        margin-right: 2.5rem;
+        white-space: nowrap;
+    }
     </style>
 </head>
 <body>
 <div>
-    <nav class="navbar navbar-expand-lg navbar-dark fd-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/favicon.svg" alt="" width="24" height="24" class="d-inline-block align-text-top">
-                FastDo
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fd-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/favicon.svg" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    FastDo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">博客</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">发布</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">文档</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">0.5.x文档</a></li>
-                            <li><a class="dropdown-item" href="#">0.6.x文档</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">FastDo博客说明</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">测试</a>
-                    </li>
-                </ul>
-                <form class="input-group me-0 me-lg-2" role="search" style="width: auto;">
-                    <input class="form-control" type="search" placeholder="搜索">
-                    <button class="btn btn-light" type="submit"><img class="align-text-top" src="images/search.svg" /></button>
-                </form>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item fd-nav-item"><a class="nav-link">注册</a></li>
-                    <li class="nav-item fd-nav-item"><a class="nav-link">登录</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">博客</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">发布</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">文档</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">0.5.x文档</a></li>
+                                <li><a class="dropdown-item" href="#">0.6.x文档</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">FastDo博客说明</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">测试</a>
+                        </li>
+                    </ul>
+                    <form class="input-group me-0 me-lg-2" role="search" style="width: auto;">
+                        <input class="form-control" type="search" placeholder="搜索">
+                        <button class="btn btn-light" type="submit"><img class="align-text-top" src="images/search.svg" /></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item fd-nav-item"><a class="nav-link">注册</a></li>
+                        <li class="nav-item fd-nav-item"><a class="nav-link">登录</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <ul class="fd-banner">
+        <li>【公告】FastDo博客全新建立</li>
+        <li>【热文】CentOS简单搭建Git Server</li>
+        <li>【推荐】4类软件项目的可遇程度和成功可能性</li>
+        <li>【推荐】5种大家都觉得简单但其复杂程度远被低估的编程语言</li>
+    </ul>
 
     <main class="container-fluid">
         <div class="row">
@@ -98,9 +121,27 @@
                 </ul>
                 </div>
             </div>
-            <div class="col-lg">Hello<br/>Hello<br/>Hello<br/>Hello<br/>Hello<br/>Hello<br/>Hello<br/>Hello<br/>
+            <div class="col-lg">
+                <div class="row">
+                    <div class="col">
+                        Push
+                    </div>
+                    <div class="col">
+                        New
+                    </div>
+                    <div class="col">
+                        Hot
+                    </div>
+                </div>
             </div>
-            <div class="col-auto d-none d-lg-block" style="width: 300px; background-color:#f0f0f0;">30天内最新评论</div>
+            <div class="col-auto d-none d-lg-block" style="width: 300px; background-color:#f0f0f0;">
+                <h5 style=" margin-top: 2rem;">30天内最新评论</h5>
+                <ol style="padding-left: 1.25rem;">
+                    <li>游客1：哈哈，这文完全乱说... - <a class="link-secondary" href="#">解决ASP.NET Core在Task中使用IServiceProvider的问题</a></li>
+                    <li>游客51：这个做什么的... - <a class="link-secondary" href="#">【Maui正式版】创建可跨平台的Maui程序，以及有关依赖注入、MVVM双向绑定</a></li>
+                    <li>萧战：我儿萧炎有大帝之姿 - <a class="link-secondary" href="#">你有一份斗破苍穹的词库，请查收</a></li>
+                </ol>
+            </div>
         </div>
     </main>
 
