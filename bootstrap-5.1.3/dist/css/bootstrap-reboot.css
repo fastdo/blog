@@ -154,10 +154,8 @@ p {
 
 abbr[title],
 abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -230,11 +228,12 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: #337ab7;
+  text-decoration: none;
 }
 a:hover {
-  color: #0a58ca;
+  color: #296292;
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -446,10 +445,6 @@ legend + * {
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
 }
 
 ::file-selector-button {

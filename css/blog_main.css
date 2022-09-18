@@ -1,44 +1,59 @@
-body {
-  font-family: "Microsoft YaHei UI", "Microsoft YaHei", Ubuntu, Consolas, Verdana, Tahoma, Arial, sans-serif;
+html, body {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", Ubuntu, Consolas, Verdana, Tahoma, Arial, sans-serif;
+    font-size: 14px;
 }
-.dropdown-submenu {
-  position: relative;
+
+.fd-navbar {
+    /* background-color: #333; */
 }
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
+
+.fd-footer {
+    /* background-color: #333; */
+    /* color: #FFF; */
+    padding: 2.5rem;
 }
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+.fd-footer ul {
+    margin-bottom: 0;
 }
-.dropdown-submenu > a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
+
+.fd-nav-item {
 }
-.dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
+
+.fd-banner {
+    /* background-color: #ebebeb; */
+    height: 2.5rem;
+    margin: 0;
+    list-style-type: none;
+    color: #666699;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
 }
-.dropdown-submenu.pull-left {
-  float: none;
+.fd-banner > li {
+    margin-right: 2.5rem;
+    white-space: nowrap;
 }
-.dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
+
+.fd-left {
+    width: 200px;
+    /* background-color:#f9f9f9; */
+}
+
+.fd-right {
+    width: 300px;
+    /* background-color:#f9f9f9; */
+}
+
+a.fd-title-link {
+    color: #337ab7;
+    /* color: #666699; */
+    font-weight: bold;
+    text-decoration: underline;
+}
+a.fd-title-link:hover {
+    /* color: #71a63f; */
+    color: #fd7e14;
+    font-weight: bold;
+    text-decoration: none;
 }

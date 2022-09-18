@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="bootstrap-5.1.3/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/blog_main.css" />
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.js"></script>
+    <title>FastDo blog</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fd-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/favicon.svg" alt="" width="24" height="24" class="d-inline-block align-text-top">
+                    FastDo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 active" href="#">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">博客</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">发布</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">文档</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">0.5.x文档</a></li>
+                                <li><a class="dropdown-item" href="#">0.6.x文档</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">FastDo博客说明</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3">测试</a>
+                        </li>
+                    </ul>
+                    <form class="input-group me-0 me-lg-2 px-3" role="search" style="width: auto;">
+                        <input class="form-control" type="search" placeholder="搜索">
+                        <button class="btn btn-outline-secondary" type="submit"><img class="align-text-top" src="images/search.svg" /></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item fd-nav-item"><a class="nav-link px-3">注册</a></li>
+                        <li class="nav-item fd-nav-item"><a class="nav-link px-3">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <ul class="fd-banner d-none">
+        <li>【公告】FastDo博客全新建立</li>
+        <li>【热文】CentOS简单搭建Git Server</li>
+        <li>【推荐】4类软件项目的可遇程度和成功可能性</li>
+        <li>【推荐】5种大家都觉得简单但其复杂程度远被低估的编程语言</li>
+    </ul>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block fd-left">
+                <div class="ms-5">
+                <h6 style="font-weight: bold; margin-top: 2rem;">全部分类</h6>
+                <ul class="list-group" style="list-style-type: none;">
+                    <li>C/C++</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                    <li>杂谈设想</li>
+                    <li>工具</li>
+                    <li>心得笔记</li>
+                </ul>
+                <h6 style="font-weight: bold; margin-top: 2rem;">主题专栏</h6>
+                <ul class="list-group" style="margin-bottom: 2rem; list-style-type: none;">
+                    <li>C语言教程</li>
+                    <li>C++教程</li>
+                    <li>PHP教程</li>
+                    <li>COM组件编程</li>
+                    <li>pthread教程</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="col-lg px-5">
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div>
+                            <h6>最近推荐</h6>
+                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">X86PRO.COM的未来：一种高负载的网站开发方法（一）</a></h5>
+                            <div class="clearfix">
+                                <div style="background-color: #67B168; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+</svg></div>
+                                <p class="card-text">运行2年了，2年来，一直想给x86pro改版，终究没有去实现。为什么呢？因为现有的动态网页开发技术已无法勾起我的兴趣，主要是因为它们大... <a href="#">阅读全文</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div>
+                            <h6>最新文章</h6>
+                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">CentOS简单搭建Git Server</a></h5>
+                            <div class="clearfix">
+                                <div style="background-color: #F0AD4E; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></div>
+                                
+                                <p class="card-text">1. 安装Git # yum install git 2. 判断安装是否成功 # git --version 3. 修改你的身份 # git config --global user.name "yourname"... <a href="#">阅读全文</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div>
+                            <h6>最热文章</h6>
+                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">5种大家都觉得简单但其复杂程度远被低估的计算机语言</a></h5>
+                            <div class="clearfix">
+                                <div style="background-color: #D9534F; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+  <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+</svg></div>
+                                <p class="card-text">没错，这是一篇娱乐文，此文的一切观点都是作者的一己之见，不代表任何人。废话不多说，开始！ 第5名：ActionScript Flash的动作脚本... <a href="#">阅读全文</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 pb-2" style="border-bottom: 1px solid #f6f6f6;">
+                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">当VT-x虚拟化特性没有出现时解决办法</a></h5>
+                    <div class="clearfix">
+                        <div style="float: left; background-color: #666699; color: white;" class="p-2 me-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+</svg></div>
+                        <div>最近用上了新买的笔记本，装了VMware虚拟机，总是提示Intel虚拟化特性没有开启，不能运行64位系统。网上搜到的答案无非就是
+1，是不是CPU本身不支持啊。（呵呵哒，intel从很久之前生产的CPU都是支持虚拟化特性的了，这个答案纯属骗分的）... <a href="#">阅读全文</a></div>
+                    </div>
+                    <small class="d-flex">
+                        <a href="#" class="pe-2 text-decoration-none">WT</a>  <div class="px-2">2022-08-09 20:30:11</div>  <div class="px-2"><img src="images/hand-thumbs-up.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 100</div>  <div class="px-2"><img src="images/chat-dots.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 0</div>  <div class="ps-2"><img src="images/eye.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 20</div>
+                    </small>
+                </div>
+                
+                <div class="mt-3 pb-2" style="border-bottom: 1px solid #f6f6f6;">
+                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">(CentOS 64位) nginx+PHP+OPcache+MariaDB配置教程</a></h5>
+                    <div class="clearfix">
+                        <div style="float: left; background-color: #666699; color: white;" class="p-2 me-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+</svg>
+                        </div>
+                        <div>前言
+
+之前我才发布过一篇“(CentOS) Apache+FastCGI+PHP+MySQL配置教程”的文章，没想到这么快就换web server了。这次换成了内置fastcgi模块的nginx，php的版本选择了5.4，改成了动态编译扩展的方式，还添加了Zend OPcache的PECL扩展。废话不多说，下面请看具体操作。
+... <a href="#">阅读全文</a>
+                        </div>
+                    </div>
+                    <small class="d-flex">
+                        <a href="#" class="pe-2">WT</a>  <div class="px-2">2022-08-09 20:30:11</div>  <div class="px-2"><img src="images/hand-thumbs-up.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 100</div>  <div class="px-2"><img src="images/chat-dots.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 0</div>  <div class="ps-2"><img src="images/eye.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 20</div>
+                    </small>
+                </div>
+                
+                <div class="mt-3 pb-2" style="border-bottom: 1px solid #f6f6f6;">
+                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">细谈字符串编码</a></h5>
+                    <div class="clearfix">
+                        <div style="float: left; background-color: #666699; color: white;" class="p-2 me-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+</svg></div>
+                        <div>字符串编码很重要，而也很容易被程序员所忽视。特别是Web程序员，他们经常受各种乱码问题折磨。 这篇文章将详细阐述字符串编码的问题，加上我自己的理解，从而揭开乱码问题的本质，以便知道怎么解决乱码问题。 为了更好的解释这个问题，我就以大家都熟悉的windows平台为例。 世界上的语言文字大概有数百种，我们常见的也... <a href="#">阅读全文</a>
+                        </div>
+                    </div>
+                    <small class="d-flex">
+                        <a href="#" class="pe-2">WT</a>  <div class="px-2">2022-08-09 20:30:11</div>  <div class="px-2"><img src="images/hand-thumbs-up.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 100</div>  <div class="px-2"><img src="images/chat-dots.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 0</div>  <div class="ps-2"><img src="images/eye.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 20</div>
+                    </small>
+                </div>
+                
+                <div class="mt-3 pb-2" style="border-bottom: 1px solid #f6f6f6;">
+                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">移动硬盘出现“文件或目录损坏且无法读取”的简单修复</a></h5>
+                    <div class="clearfix">
+                        <div style="float: left; background-color: #666699; color: white;" class="p-2 me-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+</svg></div>
+                        <div>看到WT新买了个移动硬盘，估计很快会出现这种情况，所以更新一篇文章，出现问题后，能迅速解决。
+
+移动硬盘出现“文件或目录损坏且无法读取”一般是由不正常拔取引起的，有时候你明明已经选择弹出移动硬盘了，但是手速过快，系统还没确认，你就拔了。
+
+解决办法很简单，在DOS 使用磁盘修复的命令：CHKDSK 即可。命令如下：
+
+CHKDSK X: /F
+... <a href="#">阅读全文</a></div>
+                    </div>
+                    <small class="d-flex">
+                        <a href="#" class="pe-2">WT</a>  <div class="px-2">2022-08-09 20:30:11</div>  <div class="px-2"><img src="images/hand-thumbs-up.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 100</div>  <div class="px-2"><img src="images/chat-dots.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 0</div>  <div class="ps-2"><img src="images/eye.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 20</div>
+                    </small>
+                </div>
+                
+                <div class="mt-3 pb-2" style="border-bottom: 1px solid #f6f6f6;">
+                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">X86PRO.COM的未来：一种高负载的网站开发方法(一)</a></h5>
+                    <div class="clearfix">
+                        <div style="float: left; background-color: #666699; color: white;" class="p-2 me-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+</svg></div>
+                        <div>x86pro.com的wordpress版运行2年了，2年来，一直想给x86pro改版，终究没有去实现。为什么呢？因为现有的动态网页开发技术已无法勾起我的兴趣，主要是因为它们大多是解释或半解释型的语言为开发核心。... <a href="#">阅读全文</a></div>
+                    </div>
+                    <small class="d-flex">
+                        <a href="#" class="pe-2">WT</a>  <div class="px-2">2022-08-09 20:30:11</div>  <div class="px-2"><img src="images/hand-thumbs-up.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 100</div>  <div class="px-2"><img src="images/chat-dots.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 0</div>  <div class="ps-2"><img src="images/eye.svg" class="align-text-top" style="width: 1rem; height: 1rem;" /> 20</div>
+                    </small>
+                </div>
+                
+                
+                <div class="py-4">
+                    <ul class="pagination mb-0">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-auto d-none d-xl-block fd-right">
+                <h6 style=" margin-top: 2rem; margin-bottom: 1rem; color:#666;">30天内最新评论</h6>
+                <ol style="padding:0 2rem;" class="d-flex flex-column">
+                    <li class="py-2">游客1：哈哈，这文完全乱说... - <a class="link-secondary" href="#">解决ASP.NET Core在Task中使用IServiceProvider的问题</a></li>
+                    <li class="py-2">游客51：这个做什么的... - <a class="link-secondary" href="#">【Maui正式版】创建可跨平台的Maui程序，以及有关依赖注入、MVVM双向绑定</a></li>
+                    <li class="py-2">萧战：我儿萧炎有大帝之姿 - <a class="link-secondary" href="#">你有一份斗破苍穹的词库，请查收</a></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fd-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5" style="text-align:center;">
+                    <h3 style=""><img src="images/favicon.svg" class="d-inline align-text-top" style="width: 2rem;" /> FastDo官方网站</h3>
+                    <p>保持好奇心，发挥创造力。祝您在这里学到新东西。<br />
+                    Copyright(c) 2014-2022 WT 保留所有权利<br />
+                    <small style="font-size:83%;">页面处理耗时:0.000001(s)</small></p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <h4>关于</h4>
+                            <ul class="list-unstyled">
+                                <li>关于我们</li>
+                                <li>友链申请</li>
+                                <li>广告合作</li>
+                                <li>　</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <h4>联系方式</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="javascript:void(0);" onclick="window.location.href='mailto:z'+'t'+'h'+'5'+'5'+'5'+'@'+'q'+'q'+'.'+'c'+'o'+'m';">电子邮件</a></li>
+                                <li>QQ162057326</li>
+                                <li>　</li>
+                                <li>　</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <h4>合作伙伴</h4>
+                            <ul class="list-unstyled">
+                                <li><a target="_blank" href="http://www.x86pro.com">X86编程之家</a></li>
+                                <li>　</li>
+                                <li>　</li>
+                                <li>　</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <h4>友情链接</h4>
+                            <ul class="list-unstyled">
+                                <li><a target="_blank" href="https://snowitty.com">SNOWITTY</a></li>
+                                <li><a target="_blank" href="https://naogua.ren">思维堆栈</a></li>
+                                <li><a target="_blank" href="https://gameptr.com">游戏指针</a></li>
+                                <li><a target="_blank" href="http://www.widlabs.com">WID实验室</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
