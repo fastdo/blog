@@ -1,0 +1,61 @@
+html, body {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", Ubuntu, Consolas, Verdana, Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.fd-navbar {
+    background-color: #6e65d2;
+/*    border-top: 1px solid #4738a8;
+    border-bottom: 1px solid #4839a8; */
+}
+
+.fd-footer {
+    /* background-color: #333; */
+    /* color: #FFF; */
+    padding: 2.5rem;
+}
+.fd-footer ul {
+    margin-bottom: 0;
+}
+
+.fd-nav-item {
+}
+
+.fd-banner {
+    /* background-color: #ebebeb; */
+    height: 2.5rem;
+    margin: 0;
+    list-style-type: none;
+    color: #666699;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+.fd-banner > li {
+    margin-right: 2.5rem;
+    white-space: nowrap;
+}
+
+.fd-left {
+    width: 200px;
+    /* background-color:#f9f9f9; */
+}
+
+.fd-right {
+    width: 300px;
+    /* background-color:#f9f9f9; */
+}
+
+a.fd-title-link {
+    color: #337ab7;
+    /* color: #666699; */
+    font-weight: bold;
+    text-decoration: underline;
+}
+a.fd-title-link:hover {
+    /* color: #71a63f; */
+    color: #fd7e14;
+    font-weight: bold;
+    text-decoration: none;
+}
