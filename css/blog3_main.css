@@ -4,10 +4,10 @@ html, body {
 }
 
 .fd-navbar {
-    background-color: #6e65d2;
+    background-color: #6b6baa;
 /*    border-top: 1px solid #4738a8;
     border-bottom: 1px solid #4839a8; */
-    background-image: linear-gradient(135deg, #6e65d2 0%, #6D7BE2 50%);
+    /* background-image: linear-gradient(135deg, #6e65d2 0%, #6D7BE2 50%); */
 }
 
 .fd-footer {
