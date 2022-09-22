@@ -40,6 +40,9 @@ html, body {
 
 .fd-left {
     width: 200px;
+    border-right: #adadd7 1px solid;
+    padding-right: 0;
+    padding-left: var(--bs-gutter-x);
     /* background-color:#f9f9f9; */
 }
 
