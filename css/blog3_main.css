@@ -1,6 +1,7 @@
 html, body {
     font-family: "Microsoft YaHei UI", "Microsoft YaHei", Ubuntu, Consolas, Verdana, Tahoma, Arial, sans-serif;
     font-size: 14px;
+    background-color: #f5f8ff;
 }
 
 .fd-navbar {
