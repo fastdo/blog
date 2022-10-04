@@ -57,14 +57,14 @@ body {
 }
 
 a.fd-title-link {
-    color: #337ab7;
+    /* color: #337ab7; */
     /* color: #666699; */
     font-weight: bold;
     /* text-decoration: underline; */
 }
 a.fd-title-link:hover {
     /* color: #71a63f; */
-    color: #488238;
+    /* color: #488238; */
     font-weight: bold;
     /* text-decoration: none; */
 }
