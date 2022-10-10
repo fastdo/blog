@@ -55,24 +55,34 @@
                 </div>
             </div>
 
-            <div class="collapse mt-2 d-lg-none" id="navbarCategories">
+            <div class="collapse w-100 mt-2 d-lg-none" id="navbarCategories">
                 <style>
                 .fd-navbar-categories {
                     display: flex;
                     flex-wrap: wrap;
-                    color: #f6f6fa;
+                    color: #336;
                     padding: 0 0.5rem;
                 }
                 .fd-navbar-categories > * {
                     padding:0.2rem 1rem;
                     margin: 0.2rem 0.2rem;
-                    border: #f6f6fa 1px solid;
+                    /* border: #f6f6fa 1px solid; */
                     border-radius: 0.3rem;
-                    background-color: #666699;
+                    background-color: #b4b4da;
+                }
+                .fd-navbar-categories a {
+                    color: #336;
+                }
+                .fd-navbar-categories-title {
+                    padding:0 0.8rem;
+                    color: #f6f6fa;
+                    margin-top: 0.2rem;
+                    margin-bottom: 0.2rem;
                 }
                 </style>
+                
+                <h6 class="fd-navbar-categories-title">全部分类</h6>
                 <div class="fd-navbar-categories">
-                    <div class="shadow-sm">全部分类</div>
                     <div class="shadow-sm">C/C++</div>
                     <div class="shadow-sm">JavaScript</div>
                     <div class="shadow-sm">PHP</div>
@@ -82,6 +92,16 @@
                     <div class="shadow-sm">工具</div>
                     <div class="shadow-sm">心得笔记</div>
                 </div>
+
+                <h6 class="fd-navbar-categories-title">主题专栏</h6>
+                <div class="fd-navbar-categories">
+                    <a class="shadow-sm" href="#">C语言教程</a>
+                    <a class="shadow-sm">C++教程</a>
+                    <a class="shadow-sm">PHP教程</a>
+                    <a class="shadow-sm">COM组件编程</a>
+                    <a class="shadow-sm">pthread教程</a>
+                </div>
+
             </div>
             
         </nav>
