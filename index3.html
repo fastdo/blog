@@ -111,12 +111,26 @@
         </nav>
     </header>
 
-    <ul class="container-fluid fd-banner shadow-sm">
-        <li>【公告】FastDo博客全新建立</li>
-        <li>【热文】CentOS简单搭建Git Server</li>
-        <li>【推荐】4类软件项目的可遇程度和成功可能性</li>
-        <li>【推荐】5种大家都觉得简单但其复杂程度远被低估的编程语言</li>
-    </ul>
+    <div class="container-fluid fd-banner shadow-sm">
+        <div style="animation: 15s banner linear infinite normal; display: inline-block;">
+        <ul id="fd-banner">
+            <li>【公告】FastDo博客全新建立</li>
+            <li>【热文】CentOS简单搭建Git Server</li>
+            <li>【推荐】4类软件项目的可遇程度和成功可能性</li>
+            <li>【推荐】5种大家都觉得简单但其复杂程度远被低估的编程语言</li>
+        </ul>
+        </div>
+    </div>
+    <style>
+        @keyframes banner {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
 
     <main class="container-fluid">
         <div class="row">

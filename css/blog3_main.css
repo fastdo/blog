@@ -41,16 +41,20 @@ body {
 
 .fd-banner {
     background-color: #fff;
+    color: #666699;
+    overflow: hidden;
+}
+.fd-banner ul {
     height: 2.5rem;
+    padding-left: 0;
     margin: 0;
     list-style-type: none;
-    color: #666699;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    overflow: hidden;
 }
-.fd-banner > li {
+
+.fd-banner li {
     margin-right: 2.5rem;
     white-space: nowrap;
 }
