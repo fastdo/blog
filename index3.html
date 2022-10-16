@@ -112,7 +112,7 @@
     </header>
 
     <div class="container-fluid fd-banner shadow-sm">
-        <div style="animation: 15s banner linear infinite normal; display: inline-block;">
+        <div class="fd-banner-animation">
         <ul id="fd-banner">
             <li>【公告】FastDo博客全新建立</li>
             <li>【热文】CentOS简单搭建Git Server</li>
@@ -122,6 +122,14 @@
         </div>
     </div>
     <style>
+        .fd-banner-animation {
+            animation: 15s banner linear infinite normal;
+            display: inline-block;
+            /* background-color: #b4b4da; */
+        }
+        .fd-banner-animation:hover {
+            animation-play-state: paused;
+        }
         @keyframes banner {
             from {
                 transform: translateX(0%);
