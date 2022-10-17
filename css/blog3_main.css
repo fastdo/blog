@@ -53,10 +53,12 @@ body {
     flex-wrap: nowrap;
     align-items: center;
 }
-
-.fd-banner li {
+.fd-banner ul li {
     margin-right: 2.5rem;
     white-space: nowrap;
+}
+.fd-banner ul li a {
+    color: #666699;
 }
 
 .fd-left {
