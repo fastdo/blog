@@ -27,6 +27,29 @@ body {
     /* background-image: linear-gradient(135deg, #6e65d2 0%, #6D7BE2 50%); */
 }
 
+.fd-navbar-categories {
+    display: flex;
+    flex-wrap: wrap;
+    color: #336;
+    padding: 0 0.5rem;
+}
+.fd-navbar-categories > * {
+    padding:0.2rem 1rem;
+    margin: 0.2rem 0.2rem;
+    /* border: #f6f6fa 1px solid; */
+    border-radius: 0.3rem;
+    background-color: #b4b4da;
+}
+.fd-navbar-categories a {
+    color: #336;
+}
+.fd-navbar-categories-title {
+    padding:0 0.8rem;
+    color: #f6f6fa;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
 .fd-footer {
     /* background-color: #fff; */
     /* color: #FFF; */
