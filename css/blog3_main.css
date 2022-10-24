@@ -49,7 +49,17 @@ body {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
 }
-
+.text-search {
+    color: #666699;
+}
+.btn-search {
+    color: #336;
+    border: 1px solid #ced4da;
+    border-left: none;
+}
+.fd-nav-item {
+    list-style-type: square;
+}
 .fd-footer {
     /* background-color: #fff; */
     /* color: #FFF; */
@@ -57,9 +67,6 @@ body {
 }
 .fd-footer ul {
     margin-bottom: 0;
-}
-
-.fd-nav-item {
 }
 
 .fd-banner {
