@@ -44,9 +44,9 @@
                             <a class="nav-link px-3">测试</a>
                         </li>
                     </ul>
-                    <form class="d-flex1 input-group me-0 me-lg-2 px-3" role="search" style="width: auto;">
-                        <input class="form-control bg-white text-search" type="search" placeholder="搜索"/>
-                        <button class="btn bg-white btn-search" type="submit">
+                    <form class="input-group me-0 me-lg-2 px-3 fd-nav-search" role="search">
+                        <input class="form-control" type="search" placeholder="搜索"/>
+                        <button class="btn" type="submit">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -96,28 +96,14 @@
         </ul>
         </div>
     </div>
-    <style>
-        .fd-banner-animation {
-            animation: 15s banner linear infinite normal;
-            display: inline-block;
-            /* background-color: #b4b4da; */
-        }
-        .fd-banner-animation:hover {
-            animation-play-state: paused;
-        }
-        @keyframes banner {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
 
     <main class="container-fluid">
         <div class="row">
             <div class="col-lg-3 d-none d-lg-block fd-left">
+                <div class="mt-4 bg-white p-3 shadow-sm">
+                    <div style="position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">用户操作面板</div>
+                </div>
+                
                 <div class="list-group mt-4 shadow-sm">
                     <div class="list-group-item border-0 list-group-item-action fw-bold">全部分类</div>
                     <a class="list-group-item border-0 list-group-item-action">C/C++</a>
@@ -207,32 +193,32 @@
 
                 <div class="row">
                     <div class="col-lg-4 mt-4">
-                        <div class="bg-white rounded shadow-sm h-100 p-3">
-                            <h6 style="border-bottom: 1px solid #efefef; padding-bottom: 0.5rem;">最近推荐</h6>
-                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">X86PRO.COM的未来：一种高负载的网站开发方法（一）</a></h5>
+                        <div class="bg-white rounded shadow-sm h-100 p-3 fd-recommended-box">
+                            <h6 class="fd-box-title">最近推荐</h6>
+                            <h5 class="fd-article-title"><a class="fd-link" href="#">X86PRO.COM的未来：一种高负载的网站开发方法（一）</a></h5>
                             <div class="clearfix px-1">
                                 <div style="background-color: #67B168; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
                                     <svg width="60" height="60" viewBox="0 0 16 16"><use href="#img_file-earmark-text"></use></svg>
                                 </div>
-                                <p class="card-text">
+                                <p class="fd-article-text">
                                     运行2年了，2年来，一直想给x86pro改版，终究没有去实现。为什么呢？因为现有的动态网页开发技术已无法勾起我的兴趣，主要是因为它们大... <a href="#">阅读全文</a>
                                 </p>
 
                             </div>
 
-                            <ul class="" style="margin-top: 1rem; margin-bottom: 0; list-style-type: none; padding-left: 0;">
-                                <!-- <li class="" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> -->
-                                <li class="" style="display: flex; justify-content: space-between; align-items: center;">
+                            <ul class="fd-article-list" style="margin-top: 1rem; margin-bottom: 0; list-style-type: none; padding-left: 0;">
+                                <li style="display: flex; justify-content: space-between; align-items: center;">
                                     <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><a class="link-secondary" href="#">VS Code For Web 深入浅出 -- 进程间通信篇</a></div>
                                     <div style="flex-shrink: 0; color: #999; font-size: 0.85em;">10/21</div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-lg-4 mt-4">
                         <div class="bg-white rounded shadow-sm h-100 p-3">
                             <h6 style="border-bottom: 1px solid #efefef; padding-bottom: 0.5rem;">最新文章</h6>
-                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">CentOS简单搭建Git Server</a></h5>
+                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-link" href="#">CentOS简单搭建Git Server</a></h5>
                             <div class="clearfix px-1">
                                 <div style="background-color: #F0AD4E; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
                                     <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
@@ -245,10 +231,11 @@
                             
                         </div>
                     </div>
+
                     <div class="col-lg-4 mt-4">
                         <div class="bg-white rounded shadow-sm h-100 p-3">
                             <h6 style="border-bottom: 1px solid #efefef; padding-bottom: 0.5rem;">最热文章</h6>
-                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-title-link" href="#">5种大家都觉得简单但其复杂程度远被低估的计算机语言</a></h5>
+                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-link" href="#">5种大家都觉得简单但其复杂程度远被低估的计算机语言</a></h5>
                             <div class="clearfix px-1">
                                 <div style="background-color: #D9534F; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
                                     <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
@@ -264,7 +251,7 @@
                 </div>
 
                 <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">当VT-x虚拟化特性没有出现时解决办法</a></h5>
+                    <h5><a class="fd-link" href="#" style="font-size: 1.1rem;">当VT-x虚拟化特性没有出现时解决办法</a></h5>
                     <div class="clearfix px-1">
                         <div style="float: left; background-color: #666699; color: white;" class="p-2 me-2">
                             <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
@@ -301,7 +288,7 @@
                 </div>
                 
                 <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">(CentOS 64位) nginx+PHP+OPcache+MariaDB配置教程</a></h5>
+                    <h5><a class="fd-link" href="#" style="font-size: 1.1rem;">(CentOS 64位) nginx+PHP+OPcache+MariaDB配置教程</a></h5>
                     <div class="clearfix px-1">
                         <div style="float: left; background-color: #666699; color: white;" class="p-2 me-2">
                             <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
@@ -339,7 +326,7 @@
                 </div>
                 
                 <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">细谈字符串编码</a></h5>
+                    <h5><a class="fd-link" href="#" style="font-size: 1.1rem;">细谈字符串编码</a></h5>
                     <div class="clearfix px-1">
                         <div style="float: left; background-color: #666699; color: white;" class="p-2 me-2">
                             <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
@@ -374,7 +361,7 @@
                 </div>
                 
                 <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">移动硬盘出现“文件或目录损坏且无法读取”的简单修复</a></h5>
+                    <h5><a class="fd-link" href="#" style="font-size: 1.1rem;">移动硬盘出现“文件或目录损坏且无法读取”的简单修复</a></h5>
                     <div class="clearfix px-1">
                         <div style="float: left; background-color: #666699; color: white;" class="p-2 me-2">
                             <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
@@ -415,7 +402,7 @@ CHKDSK X: /F
                 </div>
                 
                 <div class="mt-4 p-3 bg-white rounded shadow-sm">
-                    <h5><a class="fd-title-link" href="#" style="font-size: 1.1rem;">X86PRO.COM的未来：一种高负载的网站开发方法(一)</a></h5>
+                    <h5><a class="fd-link" href="#" style="font-size: 1.1rem;">X86PRO.COM的未来：一种高负载的网站开发方法(一)</a></h5>
                     <div class="clearfix px-1">
                         <div style="float: left; background-color: #666699; color: white;" class="p-2 me-2">
                             <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
@@ -460,7 +447,7 @@ CHKDSK X: /F
                 </div>
             </div>
 
-            <div class="col-auto d-none d-xl-block fd-right">
+            <div class="col-auto d-none d-xxl-block fd-right">
                 <div class="bg-white p-3 rounded shadow-sm mt-4">
                     <h6 style="margin-bottom: 1rem; color:#666;">7天内最新评论</h6>
                     <ul class="d-flex flex-column" style="padding: 0 0rem 0 0; margin-bottom: 0; list-style-type: none;">
