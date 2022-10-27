@@ -144,8 +144,11 @@ body {
     font-size: 1.1rem;
 }
 
-.fd-article-text:last-child {
-    margin-bottom: 0;
+.fd-article-text {
+    color: #555;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 ul.fd-article-list {
@@ -154,6 +157,7 @@ ul.fd-article-list {
     list-style-type: none;
     padding-left: 0;
     > li {
+        margin-top: 0.25rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -164,7 +168,7 @@ ul.fd-article-list {
             > a {
                 color: #333;
                 &:hover {
-                    color: #337ab7;
+                    color: rgb(41,98,146);
                 }
             }
         }

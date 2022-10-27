@@ -180,6 +180,10 @@ body {
   font-size: 1.1rem;
 }
 
+.fd-article-text {
+  color: #555;
+}
+
 .fd-article-text:last-child {
   margin-bottom: 0;
 }
@@ -192,6 +196,7 @@ ul.fd-article-list {
 }
 
 ul.fd-article-list > li {
+  margin-top: 0.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +219,7 @@ ul.fd-article-list > li > .title > a {
 }
 
 ul.fd-article-list > li > .title > a:hover {
-  color: #337ab7;
+  color: #296292;
 }
 
 ul.fd-article-list > li > .date {
