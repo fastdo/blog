@@ -1,11 +1,16 @@
+$primary-theme-color: #6363af !default;
+$primary-background-color: #f6f6fa !default;
+$primary-font-size: 14px !default;
+$primary-text-color: #333 !default;
+
 html {
     font-family: "Microsoft YaHei UI", "Microsoft YaHei", Ubuntu, Consolas, Verdana, Tahoma, Arial, sans-serif;
-    font-size: 14px;
+    font-size: $primary-font-size;
 }
 
 body {
-    background-color: #f6f6fa;
-    color: #333;
+    background-color: $primary-background-color;
+    color: $primary-text-color;
 }
 
 .fd-categories-icon {
@@ -20,11 +25,7 @@ body {
 }
 
 .fd-navbar {
-    background-color: #6363af;
-    /* background-color: #fff; */
-    /* border-top: 1px solid #4738a8; */
-    /* border-bottom: 1px solid #4839a8; */
-    /* background-image: linear-gradient(135deg, #6e65d2 0%, #6D7BE2 50%); */
+    background-color: $primary-theme-color;
 }
 
 .fd-navbar-categories {
@@ -33,7 +34,7 @@ body {
     color: #336;
     padding: 0 0.5rem;
 
-    & > * {
+    > * {
         padding:0.2rem 1rem;
         margin: 0.2rem 0.2rem;
         /* border: #f6f6fa 1px solid; */
@@ -52,11 +53,11 @@ body {
 }
 .fd-nav-search {
     width: auto;
-    > input {
+    input {
         color: #666699;
         background-color: #fff;
     }
-    > button {
+    button {
         color: #336;
         background-color: #fff;
         border: 1px solid #ced4da;
@@ -102,7 +103,7 @@ body {
 }
 
 .fd-banner-animation {
-    animation: 15s banner linear infinite normal;
+    animation: 20s banner linear infinite normal;
     display: inline-block;
     /* background-color: #b4b4da; */
     &:hover {
@@ -136,53 +137,102 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-.fd-box-title {
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 0.5rem;
-}
 
-.fd-article-title {
-    margin-bottom: 0.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.1rem;
-}
+    .fd-box-title {
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 0.5rem;
+    }
 
-.fd-article-text {
-    color: #666;
-    &:last-child {
+    .fd-article-title {
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.1rem;
+    }
+
+    .fd-article-text {
+        color: #666;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .fd-article-list {
+        margin-top: 1rem;
         margin-bottom: 0;
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            margin-top: 0.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                a {
+                    color: #333;
+                    &:hover {
+                        color: darken($color: #337ab7, $amount: 10%);//rgb(41,98,146);
+                    }
+                }
+            }
+
+            .date {
+                flex-shrink: 0;
+                color: #999;
+                font-size: 0.85em;
+            }
+
+            // 小圆点
+            padding-left: 1rem;
+            &:before{
+                position: absolute;
+                display: block;
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: #ccc;
+                border-radius: 50%;
+                left: 0;
+            }
+        }
     }
 }
 
-ul.fd-article-list {
-    margin-top: 1rem;
-    margin-bottom: 0;
-    list-style-type: none;
-    padding-left: 0;
-    > li {
-        margin-top: 0.25rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        > .title {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            > a {
-                color: #333;
-                &:hover {
-                    color: rgb(41,98,146);
-                }
+.fd-box-recommended {
+    @extend .fd-box;
+    .fd-article-list {
+        li {
+            &:before {
+                background-color: lighten(#67B168, 10%);
             }
         }
-        > .date {
-            flex-shrink: 0;
-            color: #999;
-            font-size: 0.85em;
+    }
+}
+
+.fd-box-newest {
+    @extend .fd-box;
+    .fd-article-list {
+        li {
+            &:before {
+                background-color: lighten(#F0AD4E, 10%);
+            }
+        }
+    }
+}
+
+.fd-box-hotest {
+    @extend .fd-box;
+    .fd-article-list {
+        li {
+            &:before {
+                background-color: lighten(#D9534F, 10%);
+            }
         }
     }
 }
