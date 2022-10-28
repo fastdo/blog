@@ -193,19 +193,21 @@
 
                 <div class="row">
                     <div class="col-lg-4 mt-4">
-                        <div class="bg-white rounded shadow-sm h-100 p-3">
-                            <h6 class="fd-box-title">最近推荐</h6>
-                            <h5 class="fd-article-title"><a class="fd-link" href="#">X86PRO.COM的未来：一种高负载的网站开发方法（一）</a></h5>
-                            <div class="clearfix px-1">
-                                <div style="background-color: #67B168; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
-                                    <svg width="60" height="60" viewBox="0 0 16 16"><use href="#img_file-earmark-text"></use></svg>
+                        <div class="rounded shadow-sm h-100 p-3 fd-box">
+                            <div>
+                                <h6 class="fd-box-title">最近推荐</h6>
+                                <h5 class="fd-article-title"><a class="fd-link" href="#">X86PRO.COM的未来：一种高负载的网站开发方法（一）</a></h5>
+                                <div class="clearfix px-1">
+                                    <div style="background-color: #67B168; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
+                                        <svg width="60" height="60" viewBox="0 0 16 16"><use href="#img_file-earmark-text"></use></svg>
+                                    </div>
+                                    <p class="fd-article-text">
+                                        运行2年了，2年来，一直想给x86pro改版，终究没有去实现。为什么呢？因为现有的动态网页开发技术已无法勾起我的兴趣，主要是因为它们大... <a href="#">阅读全文</a>
+                                    </p>
                                 </div>
-                                <p class="fd-article-text">
-                                    运行2年了，2年来，一直想给x86pro改版，终究没有去实现。为什么呢？因为现有的动态网页开发技术已无法勾起我的兴趣，主要是因为它们大... <a href="#">阅读全文</a>
-                                </p>
                             </div>
 
-                            <ul class="fd-article-list">
+                            <ul class="fd-article-list" style="position: relative; bottom: 0;">
                                 <li>
                                     <div class="title"><a class="link-secondary" href="#">VS Code For Web 深入浅出 -- 进程间通信篇</a></div>
                                     <div class="date">10/21</div>
@@ -227,40 +229,89 @@
                                     <div class="date">8/25</div>
                                 </li>
                             </ul>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-4">
-                        <div class="bg-white rounded shadow-sm h-100 p-3">
-                            <h6 class="fd-box-title">最新文章</h6>
-                            <h5 class="fd-article-title"><a class="fd-link" href="#">CentOS简单搭建Git Server</a></h5>
-                            <div class="clearfix px-1">
-                                <div style="background-color: #F0AD4E; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
-                                    <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
-                                        <use href="#img_search"></use>
-                                    </svg>
-                                </div>
+                        <div class="rounded shadow-sm h-100 p-3 fd-box">
+                            <div>
+                                <h6 class="fd-box-title">最新文章</h6>
+                                <h5 class="fd-article-title"><a class="fd-link" href="#">CentOS简单搭建Git Server</a></h5>
+                                <div class="clearfix px-1">
+                                    <div style="background-color: #F0AD4E; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
+                                        <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+                                            <use href="#img_search"></use>
+                                        </svg>
+                                    </div>
                                 
-                                <p class="card-text">1. 安装Git # yum install git 2. 判断安装是否成功 # git --version 3. 修改你的身份 # git config --global user.name "yourname"... <a href="#">阅读全文</a></p>
+                                    <p class="fd-article-text">1. 安装Git # yum install git 2. 判断安装是否成功 # git --version 3. 修改你的身份 # git config --global user.name "yourname"... <a href="#">阅读全文</a></p>
+                                </div>
                             </div>
-                            
+
+                            <ul class="fd-article-list" style="position: relative; bottom: 0;">
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">如何使用递归，递归使用的技巧详解</a></div>
+                                    <div class="date">10/21</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">React实现一个简易版Swiper</a></div>
+                                    <div class="date">10/21</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">对接【支付宝】支付接口</a></div>
+                                    <div class="date">10/15</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">git 多个commit 如何合并</a></div>
+                                    <div class="date">10/1</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">Go疑难杂症：为什么nil不等于nil</a></div>
+                                    <div class="date">8/25</div>
+                                </li>
+                            </ul>
+    
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-4">
-                        <div class="bg-white rounded shadow-sm h-100 p-3">
-                            <h6 style="border-bottom: 1px solid #efefef; padding-bottom: 0.5rem;">最热文章</h6>
-                            <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.1rem;"><a class="fd-link" href="#">5种大家都觉得简单但其复杂程度远被低估的计算机语言</a></h5>
-                            <div class="clearfix px-1">
-                                <div style="background-color: #D9534F; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
-                                    <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
-                                        <use href="#img_cup-hot"></use>
-                                    </svg>
+                        <div class="rounded shadow-sm h-100 p-3 fd-box">
+                            <div>
+                                <h6 class="fd-box-title">最热文章</h6>
+                                <h5 class="fd-article-title"><a class="fd-link" href="#">5种大家都觉得简单但其复杂程度远被低估的计算机语言</a></h5>
+                                <div class="clearfix px-1">
+                                    <div style="background-color: #D9534F; color: white; float: left; padding: 0.8rem 1.6rem; margin: 0 0.5rem 0.11rem 0; border-radius: 0.35rem;">
+                                        <svg width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+                                            <use href="#img_cup-hot"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="fd-article-text">没错，这是一篇娱乐文，此文的一切观点都是作者的一己之见，不代表任何人。废话不多说，开始！ 第5名：ActionScript Flash的动作脚本... <a href="#">阅读全文</a></p>
                                 </div>
-
-                                <p class="card-text">没错，这是一篇娱乐文，此文的一切观点都是作者的一己之见，不代表任何人。废话不多说，开始！ 第5名：ActionScript Flash的动作脚本... <a href="#">阅读全文</a></p>
                             </div>
-                            
+
+                            <ul class="fd-article-list" style="position: relative; bottom: 0;">
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">Docker 发布集成 WebAssembly 的首个技术预览版</a></div>
+                                    <div class="date">10/21</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">字节跳动开源 BitSail，助力企业走好数字化 “第一步”</a></div>
+                                    <div class="date">10/21</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">OpenZFS 开发工作重点：改进压缩、提升性能以及引入 uZFS 等</a></div>
+                                    <div class="date">10/15</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">Meta 将 Android 应用 Java 代码迁移到 Kotlin：零到 1000 万行</a></div>
+                                    <div class="date">10/1</div>
+                                </li>
+                                <li>
+                                    <div class="title"><a class="link-secondary" href="#">从启动开源项目到运营开源社区</a></div>
+                                    <div class="date">8/25</div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

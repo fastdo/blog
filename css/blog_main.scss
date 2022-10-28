@@ -131,6 +131,13 @@ body {
     /* background-color:#f9f9f9; */
 }
 
+.fd-box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .fd-box-title {
     border-bottom: 1px solid #efefef;
     padding-bottom: 0.5rem;
@@ -145,7 +152,7 @@ body {
 }
 
 .fd-article-text {
-    color: #555;
+    color: #666;
     &:last-child {
         margin-bottom: 0;
     }
@@ -181,14 +188,11 @@ ul.fd-article-list {
 }
 
 a.fd-link {
-    /* color: #337ab7; */
-    /* color: #666699; */
+    // color: #111;
     font-weight: bold;
-    /* text-decoration: underline; */
+
     &:hover {
-        /* color: #71a63f; */
-        /* color: #488238; */
+        // color: rgb(41,98,146);
         font-weight: bold;
-        /* text-decoration: none; */
     }
 }
