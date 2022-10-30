@@ -80,6 +80,9 @@ body {
   /* background-color: #fff; */
   /* color: #FFF; */
   padding: 2.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -0.08rem 0.25rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 -0.08rem 0.25rem rgba(0, 0, 0, 0.08);
 }
 
 .fd-footer ul {
@@ -152,10 +155,6 @@ body {
 
 .fd-left {
   width: 228px;
-  /* border-right: #adadd7 1px solid; */
-  /* padding-right: 0; */
-  /* padding-left: var(--bs-gutter-x); */
-  /* background-color:#f9f9f9; */
 }
 
 .fd-right {
