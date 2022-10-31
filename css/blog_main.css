@@ -153,13 +153,16 @@ body {
   }
 }
 
-.fd-left {
-  width: 228px;
+@media (min-width: 992px) {
+  .fd-left {
+    width: 228px;
+  }
 }
 
-.fd-right {
-  width: 300px;
-  /* background-color:#f9f9f9; */
+@media (min-width: 1200px) {
+  .fd-right {
+    width: 300px;
+  }
 }
 
 .fd-box, .fd-box-recommended, .fd-box-newest, .fd-box-hotest {
