@@ -159,6 +159,19 @@ body {
   }
 }
 
+.fd-categories-box {
+  background-color: #fff;
+}
+
+.fd-categories-box .fd-categories-item > a {
+  padding-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.fd-categories-box .fd-categories-item > a:last-child {
+  padding-right: 0;
+}
+
 @media (min-width: 1200px) {
   .fd-right {
     width: 300px;
