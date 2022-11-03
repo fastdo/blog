@@ -119,6 +119,10 @@ body {
   color: #666699;
 }
 
+.fd-banner ul li a:hover {
+  color: #52527a;
+}
+
 .fd-banner-animation {
   -webkit-animation: 20s banner linear infinite normal;
           animation: 20s banner linear infinite normal;
