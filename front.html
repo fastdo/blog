@@ -187,14 +187,36 @@
                 <div class="carousel-inner bg-white p-3 rounded shadow-sm">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-6 pe-2">
+                            <div class="col-xl-6 pe-xl-2 mb-2 mb-xl-0">
                                 <div class="p-3 bg-light h-100">
-                                    <code><pre>&lt;?cpp</pre></code>
+                                    ECP:
+                                    <code><pre class="mb-0">Calendar form:
+&lt;form action=&quot;act.do&quot;&gt;
+    &lt;select name=&quot;month&quot;&gt;
+    &lt;? for ( int i = 0; i &lt; 12; i++ ) { ?&gt;
+        &lt;option value=&quot;&lt;{=i}&gt;&quot;&gt;&lt;{=i+1}&gt;&lt;/option&gt;
+    &lt;? } ?&gt;&lt;/select&gt;&lt;br/&gt;
+    &lt;{import='validate.do'}&gt;
+    &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;</pre></code>
                                 </div>
                             </div>
-                            <div class="col-6 ps-2">
+                            <div class="col-xl-6 ps-xl-2 mb-2 mb-xl-0">
                                 <div class="p-3 bg-light h-100">
-                                    <code><pre>&lt;?cpp</pre></code>
+                                    CPP:
+                                    <code><pre class="mb-0">...
+RSP &lt;&lt; &quot;Calendar form:\n&lt;form action=\&quot;act.do\&quot;&gt;\n    &lt;select name=\&quot;month\&quot;&gt;\n    &quot;;
+for ( int i = 0; i &lt; 12; i++ ) { 
+RSP &lt;&lt; &quot;\n        &lt;option value=\&quot;&quot;;
+RSP &lt;&lt; i;
+RSP &lt;&lt; &quot;\&quot;&gt;&quot;;
+RSP &lt;&lt; i+1;
+RSP &lt;&lt; &quot;&lt;/option&gt;\n    &quot;;
+} 
+RSP &lt;&lt; &quot;&lt;/select&gt;&lt;br/&gt;\n    &quot;;
+RSP.import(&quot;validate.do&quot;,NULL);
+RSP &lt;&lt; &quot;\n    &lt;input type=\&quot;submit\&quot; /&gt;\n&lt;/form&gt;\n&quot;;
+...</pre></code>
                                 </div>
                             </div>
                             <div class="col-12">
